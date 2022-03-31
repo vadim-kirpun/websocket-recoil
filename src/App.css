@@ -1,9 +1,20 @@
 .App {
   text-align: center;
   background-color: #282c34;
-  min-height: 100vh;
+  height: calc(100vh - 60px);
+  list-style: none;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 60px;
+  margin: 0;
 }
 
 .App li {
-  color: white;
+  width: 30%;
+  background-color: palegreen;
+  color: seagreen;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-bottom: 10px;
 }
