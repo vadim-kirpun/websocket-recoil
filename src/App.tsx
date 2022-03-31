@@ -1,16 +1,16 @@
 import { RecoilRoot } from 'recoil';
 
-import useSocket from './hooks/useSocket';
+import Messages from './components/Messages';
+import WithSocket from './components/WithSocket';
+
 import './App.css';
 
-const App = () => {
-  useSocket();
-
-  return (
-    <RecoilRoot>
-      <div className="App"></div>
-    </RecoilRoot>
-  );
-};
+const App = () => (
+  <RecoilRoot>
+    <WithSocket>
+      <Messages />
+    </WithSocket>
+  </RecoilRoot>
+);
 
 export default App;
